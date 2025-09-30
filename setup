@@ -1,0 +1,18 @@
+Set up environment:
+
+python -m venv venv
+source venv/bin/activate           # Or venv\Scripts\activate on Windows
+pip install biopython matplotlib
+
+Save this script as protein_analysis.py.
+
+Run it from the command line, e.g.:
+
+python protein_analysis.py 1FAT
+python protein_analysis.py 1FAT --chain A --window 7 --show
+
+Outputs:
+
+Protein info printed to console
+Amino acid composition bar chart saved as {PDB_ID}_composition.png
+Hydrophobicity plot saved as {PDB_ID}_hydrophobicity.png (or shown interactively with --show)
